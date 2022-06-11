@@ -1,0 +1,41 @@
+import math
+import random
+import matplotlib.pyplot as plt
+import numpy as np
+#Comenzamos creando las variables.
+masa_del_sol = float("{:f}".format(1.989e+30))
+masa_de_la_estrella_mas_grande_de_la_vial_lactea = masa_del_sol*34
+masa_de_la_estrella = float("{:f}".format(random.randint(masa_del_sol, masa_de_la_estrella_mas_grande_de_la_vial_lactea)))
+#Constante de gravitación universal = G
+G = 6.67392e-11
+#Masa del agujero negro que orbitan = M
+M = masa_del_sol*4000000
+#Distancia de la estrella al agujero negro en el centro de la vía loactea en metros = r
+un_año_luz_en_m = float("{:f}".format(9.461e+15))
+radio_de_la_via_lactea = un_año_luz_en_m*52850
+r = random.randint(0, radio_de_la_via_lactea )
+#Momento angular
+v = math.sqrt((G*M)/r)
+pi = math.pi
+L = masa_de_la_estrella*r*v*np.sin(pi/2) 
+#Energía total del cuerpo = E
+E = ((masa_de_la_estrella*(v**2))/2)-((G*M*masa_de_la_estrella)/r)
+#Excentricidad = A
+z = ((2*(L**2)*E)/((G**2)*(M**2)*(masa_de_la_estrella**3)))+1
+while z < 0:
+  masa_de_la_estrella = float("{:f}".format(random.randint(masa_del_sol, masa_de_la_estrella_mas_grande_de_la_vial_lactea)))
+  r = random.randint(0, radio_de_la_via_lactea )
+  v = math.sqrt((G*M)/r)
+  L = masa_de_la_estrella*r*v*np.sin(pi/2) 
+  E = ((masa_de_la_estrella*(v**2))/2)-((G*M*masa_de_la_estrella)/r)
+  z = ((2*(L**2)*E)/((G**2)*(M**2)*(masa_de_la_estrella**3)))+1
+e = math.sqrt(z)
+#Definimos la funcion de la trayectoria
+pi = np.pi
+x = np.linspace(0,2*pi,10)
+a = np.cos(x)
+trayectoria = (((L**2)/(G*M*(masa_de_la_estrella**2)))/(1-((e)*a)))
+print("Las posiciones en coordenadas polares en la orbita de la estrella con el agujero negro son:")
+print(trayectoria)
+print("Los angulos que se tomaron respectivamente con su porsicion fueron:")
+print(x)
