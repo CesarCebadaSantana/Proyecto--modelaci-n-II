@@ -1,1 +1,114 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{amsthm}
+\usepackage[dvipsnames]{xcolor}
 
+
+\title{Proyecto Final}
+\author{Cebada Santana Cesar - Sanchez Gordillo Erik }
+\date{\today}
+
+
+\begin{document}
+\maketitle
+\tableofcontents
+\section{Din\'amica Newtoniana}
+La din\'amica se encarga de estudiar la causa del movimiento de los cuerpos. Isaac Newton fue el encargado de hacer las bases de la din\'amica, de ah\'i el nombre. Estas bases son las leyes de Newton que mencionaremos a continuaci\'on. 
+\subsection{Leyes de Newton} 
+\textbf{Primera ley de Newton}\\ Un cuerpo permanecer\'a en reposo o en movimiento recto con una velocidad constante, a menos que se le aplique una fuerza externa. \begin{center}
+    $\sum F = 0 \Leftrightarrow a = \frac{dv}{dt} = 0 $ 
+\end{center}
+\textbf{Segunda ley de Newton}\\ La fuerza neta que es aplicada sobre un cuerpo es proporcional a la aceleraci\'on que adquiere en su trayectoria.
+\begin{center}
+    $F = m*a$
+\end{center}
+\textbf{Tercera ley de Newton} \\La fuerza del cuerpo 1 sobre el cuerpo 2 ($F_{1-2}$ o fuerza de acci\'on)  es igual a la fuerza del cuerpo 2 sobre el cuerpo 1 ($F_{2-1}$ o fuerza de reacci\'on). La fuerza de reacci\'on tendr\'a la misma direcci\'on y magnitud que la fuerza de acci\'on, pero en sentido contrario a esta.
+
+\subsection{Errores de la din\'amica Newtoniana}
+A pesar de que las teor\'ias de Newton fueron suficientes para describir con precisi\'on los movimientos de los cuerpos sobre la Tierra o en el espacio a finales del siglo XVII, una investigaci\'on m\'as incisiva sobre el movimiento de los cuerpos estelares revela deficiencias. Einstein, en su teor\'ia general de la relatividad, fue el primero en mejorar con \'exito en 1905 las aportaciones de Newton. Esta teor\'ia permiti\'o "curvar la luz", pero se qued\'o sin explicar parte del universo observable y cuanta luz deberia curvarse. Por ejemplo, cuando se observa la rotaci\'on de las estrellas en una galaxia, las estrellas se mueven demasiado r\'apido para ser sostenidas por la gravedad, deber\'ian ser despedidas pero no lo son. \\ Esto ha generado dos teor\'ias contrarias, solo nos concentraremos en la teor\'ia de la materia oscura, la cual tiene supremac\'ia y da por supuesto que una sustancia y fuerza invisibles son las que forman la mayor\'ia del universo. La materia oscura mantiene todo unido y compensa las altas velocidades de las estrellas.
+
+\section{Galaxias}
+Como ya lo dijimos, el primero en proponer una clasificaci\'on morfol\'ogica fue Edwin Hubble, la cual se conoce como \textbf{la clasificaci\'on de Hubble}, aunque en realidad fue Alan Sandage (astr\'onomo estadounidense) quien estableci\'o los criterios definitivos de esta clasificaci\'on. La clasificaci\'on de Hubble separa las galaxias en dos grupos principales; las galaxias el\'ipticas y las galaxias espirales.  
+
+\subsection{Galaxias Espirales}
+Nos concentraremos en un tipo muy espec\'ifico de galaxias las cu\'ales analizaremos en este proyecto. Las \textbf{galaxias espirales} son galaxias de disco que contienen un bulbo central (que morfol\'ogicamente se parece a una pequeña galaxia el\'iptica), rodeado de un disco m\'as extendido que contiene brazos espirales(en general dos). Estas galaxias se subdividen en dos grandes grupos, las espirales normales y las espirales barradas. La presencia o no de una barra se refiere a la morfolog\'ia de la parte central de las galaxias, que se ve el\'iptica en las galaxias normales y rectangular en las galaxias barradas. A continuaci\'on describiremos brevemente las partes de una galaxia:
+\begin{itemize}
+    \item Brazo espiral: Parte del disco gal\'actico donde hay m\'as concentraci\'on de estrellas.  
+    \item Disco: Parte que rodea al bulbo y contiene los brazos. Movimiento predominante de rotaci\'on.
+    \item Halo: Tiene forma esf\'erica y rodea tanto el n\'ucleo como el disco. No rotan de modo ordenado. 
+    \item Contiene al n\'ucleo y hay un agujero super masivo. Estas concentradas en la parte central de la galaxia.
+\end{itemize}
+Las estrellas que se encuentran m\'as cerca del centro g\'alactico completan sus \'orbitas en menos tiempo que las que se encuentran m\'as hacia afuera. \\ La velocidad de rotaci\'on de una estrella o nube de gas a una distancia $R$ del centro de masa de una galaxia, debe estar relacionada con el potencial gravitacional que act\'ua sobre ella: fuerza gravitatoria ejercida por la masa interna a ese radio. 
+
+\[ \frac{V_{rot}^2}{R}=g \] Supongamos que nos encontramos en las partes externas del disco de una galaxia espiral. Podemos considerar que $g$ es producida por la masa contenida en la galaxia para $r < R$ considerando a est\'a puntual \[ \frac{V_{rot}^2}{R} = \frac{GM (< R) }{R^2} \] Suponemos que toda luz emitida por la galaxia viene dada por la distribuci\'on de brillo observada de sus estrellas y del gas. De este modo, podemos calcular la masa de cada componente (gas y estrellas): \\\textit{Gas (neutro, molecular, ionizado):} Podemos obtener su masa a trav\'es de observaciones de la emisi\'on de HI (linea de 21 c.m.) y de CO, cuya emisi\'on es proporcional a la densidad superficial de H2 (CO y HI proporcionan informaci\'on complementaria). \\ \textit{Estrellas de bulbo y disco:} La luminosidad de la galaxia es proporcional a la masa. Es necesario hacer ciertas suposiciones sobre la relaci\'on Masa/Luminosidas ($\frac{M}{L}$) de las estrellas, algo que no es nada trivial. \\ Curva de rotaci\'on a partir del movimiento a partir del desplazamiento Doppler observado: para una galaxia vista de perfil, la velocidad radial observada en la direcci\'on de la l\'inea de visi\'on, de una estrella o nube a distacia  galactoc\'entrica $R$ y azimuth $\theta$, se relaciona con la velocidad de rotaci\'on mediante: \[ V_{abs} = V_{sys} + V(R)\cos(\theta) \]   
+Donde $V_{sys}$ = es la velocidad sistem\'atica de la galaxia. \\Para una galaxia vista con cierto \'angulo de inclinaci\'on, necesitamos una proyecci\'on adicional:
+\[ V_{abs} = V_{sys} + V(R)\cos(\theta)\sen(i) \] siendo $i$ = la inclinaci\'on 
+\section{Materia Oscura}
+Quiz\'as lo que ocurre en realidad es que en la realidad la masa de la galaxia (a pesar de que no la "veamos"), sigue aumentando con $R$ hasta radios galactoc\'entricos mucho mayores que el tamaño \'optico de las galaxias. Esto dar\'ia lugar, a distancias mucho mayores del centro gal\'actico a un comportamiento kepleriano de la curva de rotaci\'on. \\ Esta discrepancia entre luz y masa es un fen\'omeno com\'un en galaxias espirales. Esta supuesta materia que no emite ninguna luz, es la llamada \textbf{materia oscura}. Freeman, en el año 1970, fue el primero en interpretar las curvas de rotaci\'on de espirales como evidencia de la existencia de materia oscura.Se suele suponer que la materia oscura est\'a contenida en una componente de la galaxia llamada halo, con simetr\'ia esf\'erica. \\La suma de las fuerzas radiales generadas por cada componente debe ser igual a la observada, por tanto podemos escribir: \[ V_{rot}^{2} (R) = V_{*, Disco}^{2}(R) + V_{Bulbo}^{2}(R) + V_{Gas}^{2}(R) + V_{Halo}^{2}(R) \] 
+
+\section{Modificaci\'on de la din\'amica Newtoniana}
+Una gran cantidad de datos astron\'omicos indican la presencia de discrepancias de masa en el universo. Los movimientos observados en una variedad de clases de sistemas extra gal\'acticos exceden lo que puede explicarse por la masa visible en las estrellas y el gas. O hay una gran cantidad de masa invisible en alguna forma novedosa -materia oscura- o los datos indican un desglose de nuestra comprensi\'on de la din\'amica en las escalas relevantes, o ambas. 
+
+\subsection{M\'etodo din\'amico} 
+Descripci\'on cl\'asica matem\'atica entre la velocidad tangencial de rotaci\'on de un fragmento de disco de la galaxia y la masa contenida hasta cierto radio $r$. A partir del m\'etodo din\'amico se puede construir una gr\'afica velocidad contra distancia radial a la que se denomida curva de rotaci\'on, siendo el "\'area bajo la curva proporcional a la masa encerrada hasta un cierto radios". \[ v^2 = \frac{GM}{r} \]
+
+\subsection{Factor masa luminosidad}
+Relaciona la masa local y densidad local de luminosidad que en galaxias ideales predice una luminosidad proporcional a la masa del sistema. Es evidente, a partir de una fotograf\'ia, que en galaxias espirales la luminosidad disminuye a medida que aumenta la distancia radial y por lo tanto se podr\'ia esperar que la masa local en la galaxia tambi\'en disminur\'ia con el radio, as\'i que la masa total encerrada se acercar\'ia cada vez m\'as lentamente al valor de la masa total. \\ De los dos m\'etodos descritos cabr\'ia esperar id\'enticos resultados, pero al confrontar los del m\'etodo din\'amico con los datos encontrados estos no concuerdan, pues en galaxias reales las curvas de rotaci\'on no disminuyen a radios m\'as grandes; sino que tienden a tomar un valor constante y en algunas galaxias tienden a aumentar. \\ Esto con lleva a una discrepancia de masa, que seg\'un los datos experimentales es de varios ordenes de magnitud. Para solucionar esta discrepancia de masas se han postulado diferentes teor\'ias, a saber, la hip\'otesis de materia oscura, las teor\'ias de modificaci\'on de la din\'amica gal\'actica y algunas otras propuestas de menor relevancia. Milgrom propuso (MOND). Al considerar aceptable una desviaci\'on de las leyes de la din\'mica de Newton, en esta teor\'ia se propone que, en reemplazo de una fuerza proporcional a la aceleraci\'on $\overrightarrow{F}=m\overrightarrow{a}$, cuando la aceleraci\'on de los sistemas a describir es m\'as pequeña que un cierto valor $a_0$ (en esta teor\'ia $a_0$ es una constante con dimensiones de aceleraci\'on valorada aproximadamente en 2 $\times$ 108 $\frac{m}{s^2}$) la forma de la segunda ley cambia.Est\'a modificaci\'on se basa en añadirle un factor de forma que: \[ \overrightarrow{F} = m\mu \left( \frac{a}{a_0}  \right) \overrightarrow{a} \] donde $\mu$ es una funci\'on que cumple lo siguiente: 
+\[\mu(x) = \left\{ \begin{array}{lr} 1 & ; \mu > 1\\ x & : x \ll 1 \end{array} \right. \] As\'i, cuando las aceleraciones en el sistema son mayores que la constante, $a_0$ se retorna al r\'egimen newtoniano y cuando las aceleraciones son menores comparadas con $a_0$ el r\'egimen de MOND domina. \\ Ya que est\'a primera etapa de la din\'amica modificada aplicada a sistemas de part\'iculas no cumple el principio de conservaci\'on del momento, el paso siguiente fue proponer una generalizaci\'on de la teor\'ia basada en una formulaci\'on de variaciones. Con los mismos principios y requerimientos de la din\'amica modificada, esta teor\'ia llamada AQUAL (AQUAdratic Lagrangian), se desarrolla a partir de un lagragiano modificado, que modifica la ecuaci\'on de Poisson dandole la forma: \[ \nabla \left[ \mu \left( \frac{\nabla \phi }{a_0} \nabla \phi    \right)  \right] = 4 \pi Gp \] Est\'a form\'ula la coloc\'o con muy poco conociemiento de ella, sin embargo la enunci\'o porque la investigaci\'on lo ped\'ia para  entender. \\Donde $\phi$ es el potencial modificado correspondiente y $\mu$ cumple las mismas condiciones descritas antes. As\'i, esta ecuaci\'on aplica en campos de aceleraci\'on muy pequeños, de lo contrario se recobra la ecuaci\'on de Poisson cl\'asica. Gracias a que AQUAL proviene de una funci\'on lagrangiana, de esta se pueden deducir los principios de conservaci\'on usuales. 
+
+\section{MOND no relativista}
+La aceleraci\'on de la gravedad en MOND est\'a relacionada con la aceleraci\'on Newtoniana mediante la siguiente expresi\'on:
+\[ \overrightarrow{g}N=\overrightarrow{a}u \left( \frac{a}{a_0} \right) \]
+donde $a_0$ es una constante con dimensiones de aceleraci\'on, cuyo valor es\\ $a_0 = 1.2 \times 108 \frac{cm}{s}$. La funci\'on $u \left( \frac{a}{a_0} \right) $ admite el siguiente comportamiento asint\'otico: $u = 1$ para $a \gg a_0$; recuperando de esta manera la exprresi\'on newtoniana en el r\'egimen de campo fuerte, por otro lado $u = \frac{a}{a_0}$ cuando $a \ll a_0 $. Se ha llegado a la ecuaci\'on considerando la posibilidad de que, en el l\'imite de bajas aceleraciones, la fuerza inercial no es proporcional a la aceleraci\'on como mecanismo para descartar la necesidad de recurrir a la hip\'otesis de la materia oscura.
+
+\section{Curvas de rotaci\'on}
+Las curvas de velocidad de las galaxias espiral suministaran, tal vez, la mayor restricci\'on a las teor\'ias que proponen la inexistencia de materia oculta en cantidades apreciables. Si la masa observada es toda la existente, las curvas de rotaci\'on pueden ser calculadas con base en la distribuci\'on de aquella y la teor\'ia, lo cual se puede comparar luego con las curvas observadas. La caracter\'istica m\'as destacada en las curvas de rotaci\'on parece ser su aplanamiento asint\'otico evidenciado en diferentes estudios llevados a cabo por Krumm y Salperter, Bosma, entre otros. Con la modificaci\'on propuesta para la din\'amica newtoniana, el aplanamiento asint\'otico de las curvas de rotaci\'on de un cuerpo masivo finito es asegurado por la linealidad requerida en $u \left(  \frac{a}{a_0} \right) $, para pequeños valores en el argumento o de la suposici\'on de MOND
+
+\section{Ecuaci\'on de la trayectoria de los cuerpos bajo la acci\'on de una fuerza central: \'orbitas de las estrellas alrededor de un agujero negro.} \begin{center}
+     $\overrightarrow{r} = f(\theta)$, $\overrightarrow{F} = -G\frac{Mm}{r^2}\overrightarrow{U}_r $, $\overrightarrow{F} = m\overrightarrow{a}$ \\La aceleraci\'on en coordenadas polares:\\ $-G\frac{Mm}{r^2}\overrightarrow{u}_r = m \left[ \frac{d^2 r}{dt^2} - r \left( \frac{d\theta}{dt} \right)^2  \right ] \overrightarrow{u}_r + \frac{m}{r} \frac{d}{dt} \left[ r^2 \frac{d\theta}{dt} \right] \overrightarrow{u} $ \\ La primera componente: \[ m\left[ \frac{d^2 r}{dt^2} - r \left( \frac{d\theta}{dt} \right)^2  \right ] = -G \frac{Mm}{r^2} \] \[ \Rightarrow \left[ \frac{d^2 r}{dt^2} - r \left( \frac{d\theta}{dt} \right)^2  \right ] = -G \frac{Mm}{r^2} \] La segunda componente: \[  \frac{m}{r} \frac{d}{dt} \left[ r^2 \frac{d\theta}{dt} \right] = 0 \] \[ \Rightarrow \frac{d}{dt} \left[ m r^2 \frac{d\theta}{dt} \right] \] \[ \Rightarrow m r^2 \frac{d\theta}{dt} = L \] donde $L$ es constante. \\ $L$ es el modulo del momento angular evaluado respecto al punto donde se encuentra M.
+\end{center}
+Ahora veamos lo siguiente:
+\begin{center}
+    Como $\frac{d^2r}{dt^2} -r \frac{L^2}{m^2 r^4} = -G \frac{M}{r^2}$ \\ $\frac{d \theta}{dt} = \frac{L}{mr^2}$ \[ \Rightarrow \frac{d^2r}{dt^2} -r \frac{L^2}{m^2 r^4} = -G \frac{M}{r^2} \] Queremos la trayectoria: \[ \frac{dr}{dt} = \frac{dr}{dt} \frac{d \theta}{d \theta} = \frac{dr}{d \theta} \frac{d \theta}{d t} = \frac{dr}{d \theta} \frac{L}{mr^2} \] \[ \frac{dr^2}{dt} = \frac{d^2 r}{dtd\theta} \frac{L}{mr^2} + \frac{dr}{d \theta} \frac{L}{m} \left[ \frac{-2r}{r^4} \right] \frac{dr}{dt} \] Ahora: \[ \frac{d^2r}{dt d\theta} = \frac{d^2}{dt d\theta} \frac{d \theta}{d \theta} = \frac{d^2r}{d \theta^2} \frac{d \theta}{dt} = \frac{d^2 r}{d \theta^2} \frac{L}{mr^2} \] 
+    \[ \Rightarrow \frac{d^2r}{dt^2} = \frac{d^2r}{d \theta^2} \left( \frac{L}{mr^2} \right)^2 + \frac{dr}{d \theta} \frac{L}{m} \left[ \frac{-2}{r^3} \right] \frac{dr}{d \theta} \frac{L}{mr^3}  \]
+    \[ \Rightarrow \frac{d^2r}{dt^2} = \frac{L^2}{m^2 r^4} \left[ \frac{d^2r}{d \theta^2} - \frac{2}{r} \left( \frac{dr}{d \theta} \right)^2 \right] \]
+    Ten\'iamos $\frac{d^2r}{dt^2} - r \frac{L}{m^2 r^4} = -G \frac{M}{r^2} $ \\ Ahora $\frac{L^2}{m^2 r^4} \left[ \frac{d^2r}{d \theta} - \frac{2}{r} \left( \frac{dr}{d\theta} \right)^2 \right] - r\frac{L^2}{m^2 r^4} = -G \frac{M}{r^2}$ \[ \Rightarrow \frac{L^2}{m^2 r^4} \left[ \frac{d^2r}{d \theta} - \frac{2}{r} \left( \frac{dr}{d\theta} \right)^2 \right] - r = -G \frac{M}{r^2}  \] \[ \frac{d^2 r}{d \theta^2} - \frac{2}{r} \left( \frac{dr}{d\theta} \right)^2 - r = -G \frac{M m^2 r^2}{L^2} \] Ahora resolvamos esta ecuaci\'on diferencial. Simplificando con $u=\frac{1}{r}$ 
+    \[ \frac{du}{d \theta} = - \frac{1}{r^2} \frac{d r}{d \theta} \] \[ \frac{d^2 u}{d \theta} = \frac{2r}{r^4} \frac{dr}{d\theta} \frac{dr}{d\theta} - \frac{1}{r^2} \frac{d^2 r}{d\theta^2} = \frac{2}{r^3} \left( \frac{dr}{d\theta} \right)^2 - \frac{1}{r^2} \frac{d^2r}{d\theta^2}\] \[ \Rightarrow \frac{d^2r}{d\theta} - \frac{2}{r^3} \left( \frac{dr}{d\theta} \right)^2 = - r^2 \frac{d^2 u}{d\theta^2} \] \[ \Rightarrow -r^2 \frac{d^2u}{d\theta^2}-r = -G \frac{M m^2 r^2}{d L^2} \] \[ \Rightarrow \frac{d^2 u}{d\theta^2} + \frac{1}{r} = G \frac{M m^2}{L^2} \Rightarrow \frac{d^2 u}{d \theta^2} + u = G \frac{M m^2}{L} \] \[ \frac{d^2 u}{d\theta^2} + u = k \hspace{0.1cm}; \hspace{0.5cm} k = G \frac{M m^2}{L^2} \] 
+\end{center}
+Ecuaci\'on de una can\'onica: \[ u = A \cos(\theta) + k
+ + B \sen(\theta + \phi) + k \] Veamos que: \begin{itemize}
+     \item $\phi$ = 0 $\Rightarrow$ no hay sistemas de referencia en el espacio. 
+     \item $B=0$ (Tambi\'en podr\'ia ser $A=0$)
+ \end{itemize}
+Entonces si $B=0$
+\[ u = \frac{1}{r} - A \cos(\theta) + k \]
+\[ r = \frac{1}{A \cos(\theta) + k}\]
+La excentricidad de esta ecuaci\'on de la c\'onica dependera del valor de A. \\Ahora veamos energ\'ia total de un cuerpo en un campo gravitatorio. \[ \overrightarrow{F} = -G\frac{M m}{r^2} \overrightarrow{u}_r \] \[ w = \int \overrightarrow{F} d\overrightarrow{r} = \int -G \frac{M m}{r^2} \overrightarrow{u}_r d\overrightarrow{r} = \int -G \frac{M m}{r^2} d\overrightarrow{r} = -GMm \int \frac{dr}{r^2} = -GMm \left[ -\frac{1}{r} \right] + c_1  \]
+\[ \overrightarrow{F} = m\overrightarrow{a} \]
+\[ w = \int \overrightarrow{F} d\overrightarrow{r} = \int m \overrightarrow{a} d\overrightarrow{r} = \int m \frac{d\overrightarrow{v}}{dt} d\overrightarrow{r} = \int m \frac{d\overrightarrow{r}}{dt} d\overrightarrow{v} =\int m\overrightarrow{v}d\overrightarrow{v} = \int mvdv = \frac{m v^2}{2} + c_2  \]
+\[ \Rightarrow \frac{mv^2}{2} - \frac{GMm}{r} = c_1 - c_2 \]  \[ \Rightarrow \frac{mv^2}{2} - \frac{GMm}{r} = E \] Donde $\frac{mv^2}{2}$ es la energ\'ia cin\'etica y $\frac{GMm}{r}$ es la energ\'ia potencial.
+\\La energ\'ia de los cuerpos sometida a la acci\'on de una fuerza central es constante, las fuerzas centrales son conservativas. Sabemos:
+\[ \overrightarrow{v} = \frac{dr}{dt} \overrightarrow{u}_r + r \frac{d\theta}{dt} \overrightarrow{u}_\theta \Rightarrow v^2 = \left( \frac{dr}{dt} \right)^2 + r^2 \left( \frac{d\theta}{dt} \right)^2\]
+\[ \Rightarrow E = \frac{1}{2} m \left[ \left( \frac{dr}{dt} \right)^2 + r^2 \left( \frac{d\theta}{dt} \right)^2  \right] - \frac{GMm}{r} \]  
+Recordando los c\'alculos anteriores:
+\[  E =\frac{1}{2} m \left[ \left( \frac{dr}{d\theta} \right)^2 \frac{L^2}{m^2 r^4} + r^2 \frac{L^2}{m^2 r^4} \right] - \frac{G Mm}{r} \] \[ E = \frac{L^2}{2mr^4} \left[ \left( \frac{dr}{d\theta} \right)^2 + r^2 \right] - \frac{GMm}{r} \] \[ r = \frac{1}{A \cos(\theta) + k}\] \[ \frac{dr}{d\theta}  \frac{A(\sen(\theta))}{(A \cos(\theta) + k)^2}\]
+\[ E = \frac{L^2 (A \cos(\theta) + k )^4}{2m} \left[ \frac{A^2 \sen^2(\theta) + (A \cos(\theta) + k )^2}{(A \cos(\theta) + k)^4} \right] - GMm(A\cos(\theta) + k) \]
+\[ E = \frac{L^2}{2m} \left[ A^2 + k^2 + 2kA\cos(\theta) \right] - GMm(A\cos(\theta) + k) \] Recordemos $K = G \frac{Mm^2}{L^2}$ \[ E = \frac{GMm}{2} \left[ \frac{A^2 L^2}{GMm^2} - \frac{GMm^2}{L^2} + 2A \cos(\theta) - 2(A\cos(\theta) + k) \right]\]
+\[ \Rightarrow E = \frac{GMm}{2} \left[ \frac{A^2 L^2}{ GMm^2} + \frac{GMm^2}{L^2} + 2A\cos(\theta)- 2A\cos(\theta) - 2k \right] \]
+\[ \Rightarrow E = \frac{GMm}{2} \left[ \frac{A^2 L^2}{ GMm^2} + \frac{GMm^2}{L^2} - 2 \frac{GMm^2}{L^2}  \right]  \]
+\[ \Rightarrow  E = \frac{GMm}{2} \left[ \frac{A^2 L^2}{ GMm^2} - \frac{GMm^2}{L^2} \right] \]
+\[ \Rightarrow A^2 = \frac{2E_{m}}{L^2} + \frac{G^2 M^2 m^4}{L^4} \]
+Hays dos soluciones de A, tomaremos la negativa. Como $r = \frac{1}{A\cos(\theta) + k}$ y por lo anterior tenemos: \[ \frac{1}{ \frac{GMm^2}{L^2} - \sqrt{ \frac{2Em}{L^2} - \frac{G^2 M^2 m^4}{L^4} \cos(\theta)}}\]
+Multiplicamos por un uno que ser\'a $ \frac{\frac{L^2}{GMm^2}}{\frac{L^2}{GMm^2}}$ , entonces: \[ \frac{\frac{L^2}{GMm^2}}{1- \sqrt{ \frac{2EmL^2}{G^2 M^2 m^4} + 1 } \cos(\theta) } \] la cual es la f\'ormula de la can\'onica. \\ Excentricidad = e \[ e = \sqrt{ \frac{2L^2 E}{G^2 M^2 m^3 + 1} } \] Tenemos lo siguiente: \begin{itemize}
+    \item E $<$ 0 $\Rightarrow$ $\begin{array}{lr} e < 1 & elipse\\ e = 1 & circunferencia \end{array}$ 
+    \item E = 0 $\Rightarrow$ $e = 1$ $par\'abola$
+    \item E $>$ 0 $\Rightarrow$ $e > 1$ $hip\'erbola$ 
+\end{itemize}
+Recordemos $E= \frac{mv^2}{2} - \frac{GMm}{r}$: \ \[ E_c = \frac{mv^2}{2} \hspace{1cm} y \hspace{1cm} E_p = -\frac{GMm}{r} \] 
+Tenemos: 
+\[ \left\{ \begin{array}{lr}  E < 0 \Rightarrow E_c < E_p \\ E=0 \Rightarrow E_c = E_p \\ E > 0 \Rightarrow E_c > E_p \end{array} \right.  \]
+
+\end{document}
